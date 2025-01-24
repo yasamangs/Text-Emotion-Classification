@@ -11,10 +11,8 @@ def get_model():
     model = BertForSequenceClassification.from_pretrained(
         "yasamangs/FineTuneBert")
     return tokenizer, model
-    
 
-# Encode labels
-label_encoder = LabelEncoder()
+
 tokenizer, model = get_model()
 
 user_input = st.text_area('Enter Text to Analyze')
