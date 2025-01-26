@@ -9,18 +9,20 @@ The dataset used in this project is derived from the [Kaggle's Sentiment and Emo
 | Feature     | Description                                                                 |
 |-------------|-----------------------------------------------------------------------------|
 | **sentence** | The text or sentence that is being classified for emotion.                  |
-| **emotion**  | The label for the emotion conveyed by the text. The possible labels are:    |
-|             | - `anger`                                                                    |
-|             | - `fear`                                                                     |
-|             | - `joy`                                                                      |
-|             | - `love`                                                                     |
-|             | - `sad`                                                                      |
-|             | - `surprise`                                                                |
+| **emotion**  | The label for the emotion conveyed by the text.                              |
 
-### Dataset Files:
+The possible labels are: 
+- `anger`                                                                    
+- `fear`                                                                     
+- `joy`                                                                      
+- `love`                                                                     
+- `sad`                                                                      
+- `surprise`   
+
+### Dataset Files
 The dataset consists of the **combined_emotion.csv** file, which contains the sentences and their corresponding emotion labels.
 
-### Example Data:
+### Example Data
 Here’s a small sample from the `combined_emotion.csv` file:
 
 | sentence                        | emotion |
@@ -30,7 +32,7 @@ Here’s a small sample from the `combined_emotion.csv` file:
 | I’m so angry with how things turned out | anger |
 | I am afraid of what might happen next | fear |
 
-### Preprocessing:
+### Preprocessing
 The dataset is preprocessed by:
 - Removing duplicate entries.
 - Handling missing values.
