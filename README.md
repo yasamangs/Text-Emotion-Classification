@@ -14,7 +14,7 @@ The project aims to classify text into various emotion categories such as **ange
 - **Hugging Face Hub** deployment for accessibility and sharing.
 - Deployment on **Streamlit Cloud**, ensuring scalability and public access.
 
-### Use Cases:
+### Use Cases
 This project can be extended for a variety of applications:
 - **Sentiment analysis** in social media and customer feedback.
 - **Emotion recognition** in customer support and chatbots.
