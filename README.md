@@ -2,6 +2,26 @@
 
 This repository contains files of a Capstone 2 project of [ML Zoomcamp](https://github.com/DataTalksClub/machine-learning-zoomcamp) by [Alexey Grigorev](https://github.com/alexeygrigorev)
 
+# Overview
+
+## Overview
+
+The project aims to classify text into various emotion categories such as **anger**, **fear**, **joy**, **love**, **sadness**, and **surprise**. The project leverages a **fine-tuned BERT model** to perform emotion classification from text data. The model is trained on the **Sentiment and Emotion Analysis Dataset** from Kaggle, which contains sentences labeled with corresponding emotions.
+
+### Project Features
+- **BERT model** fine-tuned for **emotion classification**.
+- **Streamlit** interface for easy interaction with the model.
+- **Hugging Face Hub** deployment for accessibility and sharing.
+- Deployment on **Streamlit Cloud**, ensuring scalability and public access.
+
+### Use Cases:
+This project can be extended for a variety of applications:
+- **Sentiment analysis** in social media and customer feedback.
+- **Emotion recognition** in customer support and chatbots.
+- **Psychological analysis** for understanding emotional tone in text.
+
+By using **Hugging Face** and **Streamlit Cloud**, this project demonstrates an end-to-end solution for deploying machine learning models with minimal effort and high scalability.
+
 ## Dataset
 
 The dataset used in this project is derived from the [Kaggle's Sentiment and Emotion Analysis Dataset](https://www.kaggle.com/datasets/kushagra3204/sentiment-and-emotion-analysis-dataset). The dataset contains text samples labeled with various emotions. The dataset includes the following features:
