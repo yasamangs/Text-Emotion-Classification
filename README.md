@@ -1,10 +1,8 @@
-# Text-Emotion-Classification
-
 This repository contains files of a Capstone 2 project of [ML Zoomcamp](https://github.com/DataTalksClub/machine-learning-zoomcamp) by [Alexey Grigorev](https://github.com/alexeygrigorev)
 
 # Overview
 
-## Overview
+# Overview
 
 The project aims to classify text into various emotion categories such as **anger**, **fear**, **joy**, **love**, **sadness**, and **surprise**. The project leverages a **fine-tuned BERT model** to perform emotion classification from text data. The model is trained on the **Sentiment and Emotion Analysis Dataset** from Kaggle, which contains sentences labeled with corresponding emotions.
 
@@ -69,6 +67,3 @@ An extensive **EDA** was conducted to understand the dataset and identify key in
 - **Target Variable Analysis**: We examined the distribution of emotions in the dataset to understand the balance between classes and identify any potential issues related to class imbalance.
   
 - **Feature Relationships**: Investigated the relationship between sentence length and emotion classes to identify if longer sentences tend to belong to certain emotions more than others.
-  
-- **Feature Importance**: We explored the distribution of sentence lengths and visualized how various emotion classes were distributed across different sentence lengths, and how these features might impact the model's prediction.
-
