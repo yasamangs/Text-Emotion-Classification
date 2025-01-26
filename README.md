@@ -59,3 +59,16 @@ The dataset is preprocessed by:
 - Tokenizing and lemmatizing the sentences using the **spaCy** library.
 
 The processed data is saved as a **Pickle file** (`emotion_data.pkl`) in the project, which contains the cleaned and tokenized sentences ready for model training.
+
+## Exploratory Data Analysis (EDA)
+
+An extensive **EDA** was conducted to understand the dataset and identify key insights:
+
+- **Data Overview**: Analyzed the basic structure of the dataset, checked for missing values, and assessed data types. We explored the two primary features: `sentence` (the text input) and `emotion` (the target label).
+  
+- **Target Variable Analysis**: We examined the distribution of emotions in the dataset to understand the balance between classes and identify any potential issues related to class imbalance.
+  
+- **Feature Relationships**: Investigated the relationship between sentence length and emotion classes to identify if longer sentences tend to belong to certain emotions more than others.
+  
+- **Feature Importance**: We explored the distribution of sentence lengths and visualized how various emotion classes were distributed across different sentence lengths, and how these features might impact the model's prediction.
+
