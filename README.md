@@ -2,8 +2,6 @@ This repository contains files of a Capstone 2 project of [ML Zoomcamp](https://
 
 # Overview
 
-# Overview
-
 The project aims to classify text into various emotion categories such as **anger**, **fear**, **joy**, **love**, **sadness**, and **surprise**. The project leverages a **fine-tuned BERT model** to perform emotion classification from text data. The model is trained on the **Sentiment and Emotion Analysis Dataset** from Kaggle, which contains sentences labeled with corresponding emotions.
 
 ### Project Features
@@ -99,7 +97,6 @@ To train the model using the provided script, execute:
    ```bash
       python train.py
    ```
-## Running the streamlit app
 
 ## The Streamlit App
 
@@ -137,14 +134,13 @@ After running the above command, the app will open in your default web browser a
 ## Model Deployment
 
 The fine-tuned BERT model is deployed on **Hugging Face** for easy access and real-time predictions. The deployment steps include:
-   - Uploading the fine-tuned model to the **Hugging Face Model Hub**.
+   - Uploading the fine-tuned model to the **Hugging Face Model Hub**. The code is available under the Deploy_Finetuned_Bert.ipynb file.
    - Integrating the model with **Streamlit** for a user-friendly web interface.
    - Deploying the model on **Streamlit Cloud**, allowing users to interact with the model and make emotion predictions.
 
-## Real-time Predictions
-
 Once deployed, users can input a sentence, and the model will predict the associated emotion. This deployment approach ensures scalability and easy access for real-time applications.
 
+Check the link out for Real-time prediction : [Streamlit Cloud](https://text-emotion-classification-xhpkxsdfvhopyywjpmlw5m.streamlit.app/)
 
 # License
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
