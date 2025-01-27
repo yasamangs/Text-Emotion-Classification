@@ -67,3 +67,19 @@ An extensive **EDA** was conducted to understand the dataset and identify key in
 - **Target Variable Analysis**: We examined the distribution of emotions in the dataset to understand the balance between classes and identify any potential issues related to class imbalance.
   
 - **Feature Relationships**: Investigated the relationship between sentence length and emotion classes to identify if longer sentences tend to belong to certain emotions more than others.
+
+
+## Model Training
+
+Multiple models were trained and evaluated:
+1. **Random Forest Classifier**: Describes the process of training a baseline machine learning model using **TF-IDF** features.
+2. **BERT Model**: Explains the process of fine-tuning a **pre-trained BERT model** for emotion classification.
+
+Both models are evaluated using **accuracy** and the results are compared.
+
+## Exporting Notebook to Script
+
+The logic for training the model has been exported to a separate Python script (`train.py`) to facilitate reproducibility and deployment.
+
+
+
