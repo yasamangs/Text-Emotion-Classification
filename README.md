@@ -68,18 +68,83 @@ An extensive **EDA** was conducted to understand the dataset and identify key in
   
 - **Feature Relationships**: Investigated the relationship between sentence length and emotion classes to identify if longer sentences tend to belong to certain emotions more than others.
 
+To reproduce the results:
 
-## Model Training
+1. **Data Access**: The dataset is available in [Kaggle's Sentiment and Emotion Analysis Dataset](https://www.kaggle.com/datasets/kushagra3204/sentiment-and-emotion-analysis-dataset). You can directly download or use the notebook available in the repository to access to it.
+2. **Execution**: Run the Colab notebook (`notebook.ipynb`) or the training script (`train.py`) without errors.
 
-Multiple models were trained and evaluated:
-1. **Random Forest Classifier**: Describes the process of training a baseline machine learning model using **TF-IDF** features.
-2. **BERT Model**: Explains the process of fine-tuning a **pre-trained BERT model** for emotion classification.
+## Environment Setup
 
-Both models are evaluated using **accuracy** and the results are compared.
+To set up the project, follow these steps.
 
-## Exporting Notebook to Script
+1. Clone the repository at your desired path, then open the folder:
+   ```bash
+      git clone https://github.com/yasamangs/Text-Emotion-Classification.git
+      cd Text-Emotion-Classification
+   ```
+2. Create a Conda environment and activate it:
+   ```bash
+      conda create --name Text-Emotion-env python=3.8
+      conda activate Text-Emotion-env
+   ```
+3. Install the required dependencies:
+   ```bash
+      pip install -r requirements.txt
+   ```
+Or, use Google Colab and upload the notebook directly on it.
 
-The logic for training the model has been exported to a separate Python script (`train.py`) to facilitate reproducibility and deployment.
+## Running the Model Training Script
+
+To train the model using the provided script, execute:
+   ```bash
+      python train.py
+   ```
+## Running the streamlit app
+
+## The Streamlit App
+
+To interact with the trained emotion classification model and visualize predictions, a **Streamlit app** is provided. The app allows users to input text and get real-time predictions for the emotion conveyed by the sentence. The app is built using **Streamlit**, a popular Python library for creating web applications for machine learning models.
+
+### Steps to Run the Streamlit App Locally
+
+Follow the steps below to run the app on your local machine:
+
+1. Install Dependencies:
+
+Before running the app, make sure all the required dependencies are installed. These include **Streamlit**, **Transformers**, and other packages used for data processing and model inference.
+
+To install all dependencies, run the following command:
+
+```bash
+pip install -r requirements.txt
+```
+
+2. Run the Streamlit App:
+   
+Once the dependencies are installed, navigate to the directory containing the app.py file and run the following command:
+```bash
+streamlit run app.py
+```
+
+3. Interacting with the App:
+
+After running the above command, the app will open in your default web browser at [Localhost](http://localhost:8501). The user interface will allow you to:
+
+- Enter text: Type a sentence in the provided input field.
+- Analyze: The model will predict the emotion conveyed by the text.
+- View Prediction: The predicted emotion is displayed along with the logits (the raw model output) and the final predicted emotion.
+
+## Model Deployment
+
+The fine-tuned BERT model is deployed on **Hugging Face** for easy access and real-time predictions. The deployment steps include:
+   - Uploading the fine-tuned model to the **Hugging Face Model Hub**.
+   - Integrating the model with **Streamlit** for a user-friendly web interface.
+   - Deploying the model on **Streamlit Cloud**, allowing users to interact with the model and make emotion predictions.
+
+## Real-time Predictions
+
+Once deployed, users can input a sentence, and the model will predict the associated emotion. This deployment approach ensures scalability and easy access for real-time applications.
 
 
-
+# License
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
